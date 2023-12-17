@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #B31312;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+        h1{
+            color:white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1 >Heart Disease Prediction</h1>
+    <form action="/predict" method="post">
+        Age: <input type="text" name="age" required><br>
+        Sex: <input type="text" name="sex" required><br>
+        CP: <input type="text" name="cp" required><br>
+        Trestbps: <input type="text" name="trestbps" required><br>
+        Chol: <input type="text" name="chol" required><br>
+        Fbs: <input type="text" name="fbs" required><br>
+        Restecg: <input type="text" name="restecg" required><br>
+        Thalach: <input type="text" name="thalach" required><br>
+        Exang: <input type="text" name="exang" required><br>
+        Oldpeak: <input type="text" name="oldpeak" required><br>
+        Slope: <input type="text" name="slope" required><br>
+        Ca: <input type="text" name="ca" required><br>
+        Thal: <input type="text" name="thal" required><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
